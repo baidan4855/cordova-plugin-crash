@@ -16,7 +16,7 @@ module.exports = function(context) {
     content = content.replace(crashCode, '');
     content = content.replace(commentReg, '$1');
     utilities.saveContent(cdvActivityPath, content);
-    utilities.colorLog("green", 'Tip: CordovaActivity.java has been restored automatically!!')
+    utilities.colorLog("green", 'Tip: CordovaActivity.java has been restored automatically!!');
   }
 
   if (platforms.indexOf("ios") !== -1) {

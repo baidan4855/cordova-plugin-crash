@@ -5,6 +5,8 @@ var utilities = require("./utilities");
 
 
 module.exports = function(context) {
+  utilities.colorLog("red", '-------------------------------------------------------------');
+  utilities.colorLog("red", 'Warnning: Never use this plugin in a production environment!!')
 
   var platforms = context.opts.cordova.platforms;
 
@@ -27,4 +29,6 @@ module.exports = function(context) {
     utilities.saveContent(cdvViewController, content);
     utilities.colorLog("red", 'Tip: CDVViewController.m has been changed automatically!!');
   }
+
+  utilities.colorLog("red", '-------------------------------------------------------------');
 };
