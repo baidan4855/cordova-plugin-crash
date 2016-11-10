@@ -1,0 +1,20 @@
+{
+  "name": "cordova-plugin-crash-trigger",
+  "version": "1.0.0",
+  "cordova": {
+    "id": "cordova-plugin-crash-trigger",
+    "platforms": [
+      "android"
+    ]
+  },
+  "description": "Cordova Crash Trigger",
+  "repository": "https://github.com/baidan4855/cordova-plugin-crash-trigger.git",
+  "issue": "https://github.com/baidan4855/cordova-plugin-crash-trigger/issues",
+  "keywords": [
+    "cordova",
+    "cordova-plugin",
+    "crash trigger"
+  ],
+  "author": "jackjiang",
+  "license": "MIT"
+}

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    id="cordova-plugin-crash-trigger"
+    version="1.0.0">
+  <name>crash trigger</name>
+  <description>Cordova Crash Trigger</description>
+  <license>Apache 2.0</license>
+  <keywords>cordova plugin, crash trigger</keywords>
+  <repo>https://github.com/baidan4855/cordova-plugin-crash-trigger.git</repo>
+  <issue>https://github.com/baidan4855/cordova-plugin-crash-trigger/issues</issue>
+
+  <asset src="www/CrashTrigger.js" target="js/CrashTrigger.js"/>
+
+  <js-module src="www/CrashTrigger.js" name="CrashTrigger">
+    <clobbers target="CrashTrigger" />
+  </js-module>
+
+  <!-- android -->
+  <platform name="android">
+    <config-file target="res/xml/config.xml" parent="/*">
+      <feature name="CrashTrigger">
+        <param name="android-package" value="com.ihealth.plugin.CrashTrigger"/>
+      </feature>
+    </config-file>
+    <source-file src="src/android/CrashTrigger.java" target-dir="src/com/ihealth/plugin" />
+
+  </platform>
+
+</plugin>
